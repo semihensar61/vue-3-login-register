@@ -1,19 +1,9 @@
 <template>
-    <AtomTabButtonVue  :tabButtonString = "tabButtonString" />
+  <AtomTabButtonVue :tabButtonString="store.state.tabButtonString" />
 </template>
 
-<script lang="ts">
-import { useStore } from '../../store'
-import AtomTabButtonVue from '../atoms/AtomTabButton.vue'
-
-export default {
-  setup () {
-    const store = useStore()
-    const tabButtonString = store.state.tabButtonString
-
-    return {
-        tabButtonString
-    }
-  }
-}
+<script setup lang="ts">
+import { useStore } from "../../store";
+import AtomTabButtonVue from "../atoms/AtomTabButton.vue";
+const store = useStore();
 </script>

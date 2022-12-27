@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MoleculeTabVue from '@/components/molecules/MoleculeTab.vue';
+import MoleculeTabVue from "@/components/molecules/MoleculeTab.vue";
 </script>
 
 <template>

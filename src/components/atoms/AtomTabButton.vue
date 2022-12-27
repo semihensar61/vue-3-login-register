@@ -7,9 +7,9 @@
 <script setup lang="ts">
 const props = defineProps({
   tabButtonString: { type: String, required: true },
-})
+});
 
-props.tabButtonString // string
+props.tabButtonString; // string
 </script>
 
 <style lang="scss" scoped>
