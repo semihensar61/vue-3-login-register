@@ -1,8 +1,6 @@
 import { MutationTypes } from "@/store/mutation-types"
 import { ActionTypes } from "@/store/action-types"
 
-
-
 export function mutationType(form: string) : MutationTypes {
 
     if(form === "LOGIN") 

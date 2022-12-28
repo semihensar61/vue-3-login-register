@@ -10,9 +10,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import MoleculeTabVue from "@/components/molecules/MoleculeTab.vue";
+
 import LoginForm from "../molecules/LoginForm.vue";
 import RegisterForm from '../molecules/RegisterForm.vue';
-
 
 export default defineComponent({
   computed: {
