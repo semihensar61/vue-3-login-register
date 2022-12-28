@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import MoleculeTabVue from "@/components/molecules/MoleculeTab.vue";
+import OrganismCardVue from '@/components/organisms/OrganismCard.vue';
 </script>
 
 <template>
-  <main>
-    <MoleculeTabVue></MoleculeTabVue>
-  </main>
+    <OrganismCardVue></OrganismCardVue>
 </template>

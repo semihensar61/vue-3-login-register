@@ -14,7 +14,6 @@ props.tabButtonString; // string
 
 <style lang="scss" scoped>
 .tab-button {
-  width: 200px;
-  height: 200px;
+
 }
 </style>
