@@ -1,8 +1,8 @@
 <template>
   <div class="register-form">
-     <AtomInput placeholder="Full Name"></AtomInput>
-     <AtomInput placeholder="E-Mail"></AtomInput>
-     <AtomInput placeholder="Password"></AtomInput>
+     <AtomInput placeholder="Full Name" form="LOGIN" type="fullName"></AtomInput>
+     <AtomInput placeholder="E-Mail" form="LOGIN" type="email"></AtomInput>
+     <AtomInput placeholder="Password" form="LOGIN" type="password"></AtomInput>
      <AtomButton button-txt="Register" button-color="#E84362"></AtomButton>
   </div>
 </template>

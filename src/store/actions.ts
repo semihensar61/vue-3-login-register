@@ -13,20 +13,14 @@ type AugmentedActionContext = {
 } & Omit<ActionContext<State, State>, 'commit'>
 
 export interface Actions {
-  [ActionTypes.GET_COUTNER](
+  [ActionTypes.REGISTER](
     { commit }: AugmentedActionContext,
     payload: number
   ): Promise<number>
 }
 
 export const actions: ActionTree<State, State> & Actions = {
-  [ActionTypes.GET_COUTNER]({ commit }) {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        const data = 256
-        commit(MutationTypes.CHANGE_TAB, data)
-        resolve(data)
-      }, 500)
-    })
+  [ActionTypes.REGISTER]({ commit }) {
+    // register request here
   },
 }

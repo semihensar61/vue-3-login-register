@@ -1,11 +1,34 @@
 <template>
-    <input class="input" :placeholder="$t(placeholder)"/>
+    <input class="input" :placeholder="$t(placeholder)" v-model = "input"/>
 </template>
 
-<script setup lang="ts">
-const props = defineProps({
- placeholder: { type: String, required: true },
-});
+<script  lang="ts">
+import { defineComponent } from 'vue';
+import { mutationType } from '../../helpers/MutationType'
+import type FormInput  from "../../types/user"
+
+export default defineComponent ( {
+    data() {
+        return {
+            input: ""
+        }
+    },
+    props : {
+        placeholder: { type: String, required: true },
+        type: { type: String, required: true },
+        form: { type: String, required: true },
+    },
+    watch : {
+        input(v: string) {
+            console.log(this.type)
+            const payload  = {
+                key: this.type,
+                value: v
+            } as FormInput
+            this.$store.commit(mutationType(this.form), payload)
+        }
+    }
+})
 
 </script>
 
@@ -19,7 +42,6 @@ const props = defineProps({
     color: #65686C;
     border: none;
     border-bottom: 1px solid #65686C;
-    cursor: pointer;
     &:hover {
         opacity: 0.8;
     }
