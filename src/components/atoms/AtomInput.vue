@@ -1,5 +1,5 @@
 <template>
-    <input class="input" :placeholder="$t(placeholder)" v-model = "input"/>
+    <input class="input" :placeholder="$t(placeholder)" v-model ="input"/>
 </template>
 
 <script  lang="ts">
@@ -17,6 +17,10 @@ export default defineComponent ( {
         placeholder: { type: String, required: true },
         type: { type: String, required: true },
         form: { type: String, required: true },
+        isValidData: {
+            type: Boolean,
+            default: false,
+        },
     },
     watch : {
         input(v: string) {

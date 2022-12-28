@@ -2,7 +2,7 @@
 <template>
   <div class="card">
     <MoleculeTabVue></MoleculeTabVue>
-    <LoginForm v-if="tab === 'login'"></LoginForm>
+    <LoginForm v-if="tab === 'login'" />
     <RegisterForm v-else></RegisterForm>
   </div>
 </template>
@@ -15,12 +15,12 @@ import RegisterForm from '../molecules/RegisterForm.vue';
 
 
 export default defineComponent({
-    computed: {
-        tab() {
-            return this.$store.state.tab;
-        }
-    },
-    components: { RegisterForm, LoginForm, MoleculeTabVue }
+  computed: {
+    tab() {
+        return this.$store.state.tab;
+    }
+  },
+  components: { RegisterForm, LoginForm, MoleculeTabVue },
 })
 </script>
 
