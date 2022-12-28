@@ -4,5 +4,8 @@
     "E-Mail": "E-Posta Adresinizi Giriniz",
     "Password": "Parolanız",
     "Full Name": "Adınız Soyadınız",
-    "Invalid Fields": "Formu düzgün doldurunuz"
+    "invalidFields": "Formu düzgün doldurunuz",
+    "successLogin": "Giriş Yapıldı !!",
+    "successRegister": "Üye Kaydı Başarıyla oluşturuldu giriş yapabilirsiniz!!",
+    "cantLogin": "email veya şifre yanlış"
 }

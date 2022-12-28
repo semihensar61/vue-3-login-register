@@ -9,6 +9,16 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
+    {
+      path: "/success-register",
+      name: "SuccessRegister",
+      component: () => import("../views/SuccessRegisterView.vue")
+    },
+    {
+      path: "/success-login",
+      name: "SuccessLogin",
+      component: () => import("../views/SuccessLoginView.vue")
+    },
   ],
 });
 

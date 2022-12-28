@@ -8,7 +8,7 @@
         v-model="v$.formData.password.$model"
         :errors="v$.formData.password.$errors"
         :isValidData="!v$.formData.password.$invalid" />
-    <span class="form__warning" v-if = "invalidFields">{{$t("Invalid Fields")}}</span>
+    <span class="form__warning" v-if = "invalidFields">{{$t(invalidFieldsText)}}</span>
     <AtomButton button-txt="Login" button-color="#8CA632" @send-form="sendForm" />
   </div>
 </template>
@@ -37,7 +37,8 @@ export default defineComponent({
         password: "",
         email: "",
       },
-      invalidFields: false
+      invalidFields: false,
+      invalidFieldsText: "invalidFields"
     };
   },
   validations() {
@@ -51,12 +52,18 @@ export default defineComponent({
   methods: {
     sendForm() {
       if (this.v$.$invalid) {
+        this.invalidFieldsText = "invalidFields"
         this.invalidFields = true
         return;
       }
       this.invalidFields = false
       this.$store.dispatch(actionType("LOGIN")).then((r: any) => {
-          console.log(r)
+          if(r) {
+            this.$router.push("/success-login")
+          } else {
+            this.invalidFields = true
+            this.invalidFieldsText = "cantLogin"
+          }
       })
     }
   }

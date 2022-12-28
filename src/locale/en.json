@@ -4,5 +4,7 @@
     "E-Mail": "E-Mail",
     "Password": "Password",
     "Full Name": "Full Name",
-    "Invalid Fields": "Invalid Fields"
+    "Invalid Fields": "Invalid Fields",
+    "successLogin": "successfully logged in !!",
+    "successRegister": "successfully Registered"
 }

@@ -61,7 +61,7 @@ export default defineComponent({
       }
       this.invalidFields = false
       this.$store.dispatch(actionType("REGISTER")).then((r: any) => {
-          console.log(r)
+          this.$router.push("/success-register")
       })
     }
   },
