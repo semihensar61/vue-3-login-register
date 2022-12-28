@@ -71,15 +71,3 @@ export default defineComponent({
 
 </script>
 
-<style lang="scss" scoped>
-.form {
-    display: flex;
-    flex-direction: column;
-}
-.form__warning {
-    color: red;
-    font-size: small;
-    height: 0px;
-    margin-top:1px
-}
-</style>

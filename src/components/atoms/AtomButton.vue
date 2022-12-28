@@ -24,17 +24,3 @@ export default defineComponent ( {
 
 
 </script>
-
-<style lang="scss" scoped>
-.button{
-    height: 46px;
-    margin: 20px;
-    cursor: pointer;
-    border: none;
-    color: white;
-    font-weight: bold;
-    &:hover {
-        opacity: 0.8;
-    }
-}
-</style>

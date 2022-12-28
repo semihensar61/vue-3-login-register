@@ -19,7 +19,7 @@ const i18n = createI18n({
   // ...
 })
 
-import './styles/app.scss';
+import './sass/main.scss';
 
 const app = createApp(App);
 
