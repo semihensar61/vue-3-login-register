@@ -1,5 +1,6 @@
 // store.ts
 import type { InjectionKey } from "vue";
+// @ts-ignore
 import { createStore, useStore as baseUseStore, Store } from "vuex";
 
 export interface State {
