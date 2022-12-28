@@ -2,7 +2,7 @@
   <div class="login-form">
      <AtomInput placeholder="E-Mail" form="LOGIN" type="email"></AtomInput>
      <AtomInput placeholder="Password" form="LOGIN" type="password"></AtomInput>
-     <AtomButton button-txt="Login" button-color="#8CA632"></AtomButton>
+     <AtomButton button-txt="Login" button-color="#8CA632" form="LOGIN"></AtomButton>
   </div>
 </template>
 

@@ -4,7 +4,7 @@
 
 <script  lang="ts">
 import { defineComponent } from 'vue';
-import { mutationType } from '../../helpers/MutationType'
+import { mutationType } from '../../helpers/Type'
 import type FormInput  from "../../types/user"
 
 export default defineComponent ( {
@@ -20,7 +20,6 @@ export default defineComponent ( {
     },
     watch : {
         input(v: string) {
-            console.log(this.type)
             const payload  = {
                 key: this.type,
                 value: v

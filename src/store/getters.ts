@@ -11,4 +11,10 @@ export const getters: GetterTree<State, State> & Getters = {
   tab: (state: State) => {
     return state.tab
   },
+  login: (state: State) => {
+    return state.login
+  },
+  register: (state: State) => {
+    return state.register
+  },
 }

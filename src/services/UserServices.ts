@@ -1,15 +1,15 @@
 import http from "@/http-common";
 
 /* eslint-disable */
-class TutorialDataService {
+class DataService {
 
   login(id: any): Promise<any> {
     return http.get(`/${id}`);
   }
 
   register(data: any): Promise<any> {
-    return http.post("/", data);
+    return http.post("/users", data);
   }
 }
 
-export default new TutorialDataService();
+export default new DataService();

@@ -16,7 +16,6 @@ export const mutations: MutationTree<State> & Mutations = {
   },
   [MutationTypes.LOGIN](state: any, payload: FormInput) {
     state.login[payload.key] = payload.value
-    console.log(state.login)
   },
   [MutationTypes.REGISTER](state: any, payload: FormInput) {
     state.register[payload.key] = payload.value
