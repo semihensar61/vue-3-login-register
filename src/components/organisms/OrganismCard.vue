@@ -29,6 +29,6 @@ export default defineComponent({
     width: 814px;
     height: min-content;
     background-color: #1C1F27;
-    margin-top: 20%;
+    margin-top: 18%;
 }
 </style>
