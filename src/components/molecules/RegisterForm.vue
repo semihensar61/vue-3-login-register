@@ -3,7 +3,7 @@
      <AtomInput placeholder="Adınız Soyadınız"></AtomInput>
      <AtomInput placeholder="E-Posta Adresiniz"></AtomInput>
      <AtomInput placeholder="Parolanız"></AtomInput>
-     <AtomButton button-txt="Giriş Yap" button-color="#8CA632"></AtomButton>
+     <AtomButton button-txt="Üye Ol" button-color="#E84362"></AtomButton>
   </div>
 </template>
 
