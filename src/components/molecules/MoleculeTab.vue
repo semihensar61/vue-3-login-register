@@ -9,6 +9,7 @@
 import { useStore } from "../../store";
 import AtomTabButtonVue from "../atoms/AtomTabButton.vue";
 const store = useStore();
+console.log(store.state)
 
 const isLogin =  store.state.tab === "login" ? true : false
 </script>
