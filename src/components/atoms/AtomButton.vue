@@ -25,6 +25,7 @@ export default defineComponent ( {
     methods: {
         sendForm() {
             this.$store.dispatch(actionType(this.form)).then((r: any) => {
+                console.log("form result")
                 console.log(r)
             })
         }

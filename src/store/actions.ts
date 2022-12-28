@@ -6,6 +6,7 @@ import { ActionTypes } from './action-types'
 import { MutationTypes } from './mutation-types'
 import type { LoginForm, RegisterForm } from '@/types/user'
 import DataService from "../services/UserServices"
+import { passwordMatch } from '@/helpers/user'
 
 type AugmentedActionContext = {
   commit<K extends keyof Mutations>(
@@ -33,7 +34,7 @@ export const actions: ActionTree<State, State> & Actions = {
         password: getters.register.password
     })
   },
-  [ActionTypes.LOGIN]({ commit }) {
-    // login request here
+  [ActionTypes.LOGIN]({ commit, getters }) {
+    return passwordMatch(getters.login.email, getters.login.password)
   },
 }
