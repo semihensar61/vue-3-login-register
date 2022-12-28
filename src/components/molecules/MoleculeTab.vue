@@ -1,7 +1,7 @@
 <template>
   <div class="tab">
-     <AtomTabButtonVue tabButtonString="Giriş Yap"  type="login"/>
-     <AtomTabButtonVue tabButtonString="Üye Ol"  type="register"/>
+     <AtomTabButtonVue tabButtonString="Login"  type="login"/>
+     <AtomTabButtonVue tabButtonString="Register"  type="register"/>
   </div>
 </template>
 

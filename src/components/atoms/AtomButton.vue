@@ -1,6 +1,6 @@
 <template>
     <button class="button" :style="styleProps">
-        {{ buttonTxt }}
+        {{  $t(buttonTxt) }}
     </button>
 </template>
 

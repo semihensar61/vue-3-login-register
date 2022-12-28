@@ -1,5 +1,5 @@
 <template>
-    <input class="input" :placeholder="placeholder"/>
+    <input class="input" :placeholder="$t(placeholder)"/>
 </template>
 
 <script setup lang="ts">

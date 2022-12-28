@@ -1,8 +1,8 @@
 <template>
   <div class="login-form">
-     <AtomInput placeholder="E-Posta Adresiniz"></AtomInput>
-     <AtomInput placeholder="Parolanız"></AtomInput>
-     <AtomButton button-txt="Giriş Yap" button-color="#8CA632"></AtomButton>
+     <AtomInput placeholder="E-Mail"></AtomInput>
+     <AtomInput placeholder="Password"></AtomInput>
+     <AtomButton button-txt="Login" button-color="#8CA632"></AtomButton>
   </div>
 </template>
 

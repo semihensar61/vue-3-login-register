@@ -1,6 +1,6 @@
 <template>
   <button class="tab-button" @click="changeTab" :class="tab === type ? `tab-button__${type}`:''">
-    {{ tabButtonString }}
+    {{ $t(tabButtonString) }}
   </button>
 </template>
 
